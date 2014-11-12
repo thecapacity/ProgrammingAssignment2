@@ -42,3 +42,16 @@ cacheSolve <- function(x, ...) {
     x$setinv(c_inv)
     c_inv
 }
+
+## Example Usage:
+##  c <- rbind(c(1, -1/4), c(-1/4, 1))
+##  m1 <- makeCacheMatrix(c)
+##  cacheSolve(m1)
+##      [,1]      [,2]
+##      [1,] 1.0666667 0.2666667
+##      [2,] 0.2666667 1.0666667
+##  cacheSolve(m1)
+##      getting cached data
+##      [,1]      [,2]
+##      [1,] 1.0666667 0.2666667
+##      [2,] 0.2666667 1.0666667
